@@ -1,15 +1,15 @@
 package animalkingdom;
 
-public abstract class Animals {
+public abstract class Animal {
     protected static int maxID = 0;
     protected int id;
     protected int foodAmount = 0;
     protected String name;
     protected String yearDiscovered;
 
-    public Animals(String name, String yearDiscovered){
-        maxID++;
+    public Animal(String name, String yearDiscovered){
         this.id = maxID;
+        maxID++;
         this.name = name;
         this.yearDiscovered = yearDiscovered;
     }
@@ -56,6 +56,6 @@ public abstract class Animals {
 
     @Override
     public String toString(){
-        return this.name + " " + this.yearDiscovered;
+        return "Animals{id=" + this.id + ", name='" + this.name + "', yearNamed=" + this.yearDiscovered + "}";
     }
 }
