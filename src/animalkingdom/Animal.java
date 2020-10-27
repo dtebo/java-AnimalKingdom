@@ -5,9 +5,9 @@ public abstract class Animal {
     protected int id;
     protected int foodAmount = 0;
     protected String name;
-    protected String yearDiscovered;
+    protected int yearDiscovered;
 
-    public Animal(String name, String yearDiscovered){
+    public Animal(String name, int yearDiscovered){
         this.id = maxID;
         maxID++;
         this.name = name;
@@ -22,7 +22,7 @@ public abstract class Animal {
         return this.name;
     }
 
-    public String getYearDiscovered(){
+    public int getYearDiscovered(){
         return this.yearDiscovered;
     }
 
@@ -34,7 +34,7 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public void setYearDiscovered(String yearDiscovered){
+    public void setYearDiscovered(int yearDiscovered){
         this.yearDiscovered = yearDiscovered;
     }
 

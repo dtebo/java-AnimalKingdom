@@ -59,7 +59,7 @@ Create a collection for the animals using the following data
     | Perch     | 1758 |
 
 * Using Lambda Expressions and displaying the results to the console
-  * [ ] List all the animals in descending order by year named
+  * [x] List all the animals in descending order by year named
   * [ ] List all the animals alphabetically
   * [ ] List all the animals order by how they move
   * [ ] List only those animals the breath with lungs
