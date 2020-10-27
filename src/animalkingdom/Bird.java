@@ -6,22 +6,22 @@ public class Bird extends Animal {
     }
 
     @Override
-    public void move(){
-        System.out.println("fly");
+    public String move(){
+        return "fly";
     }
 
     @Override
-    public void breath(){
-        System.out.println("lungs");
+    public String breath(){
+        return "lungs";
     }
 
     @Override
-    public void reproduce(){
-        System.out.println("eggs");
+    public String reproduce(){
+        return "eggs";
     }
 
-    // @Override
-    // public String toString(){
-    //     return super.name + " is a bird";
-    // }
+    @Override
+    public String toString(){
+        return super.name + " " + this.reproduce() + " " + this.move() + " " + this.breath() + " " + super.yearDiscovered;
+    }
 }

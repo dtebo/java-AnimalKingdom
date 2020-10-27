@@ -42,16 +42,16 @@ public abstract class Animal {
         this.foodAmount += amt;
     }
     
-    public void move(){
-        System.out.println(this.name + " is moving!");
+    public String move(){
+        return this.name + " is moving!";
     }
 
-    public void breath(){
-        System.out.println(this.name + " is breathing!");
+    public String breath(){
+        return this.name + " is breathing!";
     }
 
-    public void reproduce(){
-        System.out.println(this.name + " is reproducing!");
+    public String reproduce(){
+        return this.name + " is reproducing!";
     }
 
     @Override

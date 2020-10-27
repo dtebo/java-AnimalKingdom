@@ -6,22 +6,22 @@ public class Fish extends Animal {
     }
 
     @Override
-    public void move(){
-        System.out.println("swim");
+    public String move(){
+        return "swim";
     }
 
     @Override
-    public void breath(){
-        System.out.println("gills");
+    public String breath(){
+        return "gills";
     }
 
     @Override
-    public void reproduce(){
-        System.out.println("eggs");
+    public String reproduce(){
+        return "eggs";
     }
 
-    // @Override
-    // public String toString(){
-    //     return super.name + " is a fish";
-    // }
+    @Override
+    public String toString(){
+        return super.name + " " + this.reproduce() + " " + this.move() + " " + this.breath() + " " + super.yearDiscovered;
+    }
 }

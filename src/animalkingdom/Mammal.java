@@ -6,22 +6,22 @@ public class Mammal extends Animal {
     }
 
     @Override
-    public void move(){
-        System.out.println("walk");
+    public String move(){
+        return "walk";
     }
 
     @Override
-    public void breath(){
-        System.out.println("lungs");
+    public String breath(){
+        return "lungs";
     }
 
     @Override
-    public void reproduce(){
-        System.out.println("live births");
+    public String reproduce(){
+        return "live births";
     }
 
-//     @Override
-//     public String toString(){
-//         return super.name + " is a mammal";
-//     }
+    @Override
+    public String toString(){
+        return super.name + " " + this.reproduce() + " " + this.move() + " " + this.breath() + " " + super.yearDiscovered;
+    }
 }
