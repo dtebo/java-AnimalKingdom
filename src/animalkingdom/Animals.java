@@ -38,6 +38,22 @@ public abstract class Animals {
         this.yearDiscovered = yearDiscovered;
     }
 
+    public void eat(int amt){
+        this.foodAmount += amt;
+    }
+    
+    public void move(){
+        System.out.println(this.name + " is moving!");
+    }
+
+    public void breath(){
+        System.out.println(this.name + " is breathing!");
+    }
+
+    public void reproduce(){
+        System.out.println(this.name + " is reproducing!");
+    }
+
     @Override
     public String toString(){
         return this.name + " " + this.yearDiscovered;
