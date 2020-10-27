@@ -22,6 +22,6 @@ public class Mammals extends Animals {
 
     @Override
     public String toString(){
-        return super.name + " " + super.foodAmount;
+        return super.name + " is a mammal";
     }
 }
